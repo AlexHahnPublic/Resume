@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  21 OCT 2016 18:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  25 OCT 2016 15:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -288,37 +288,37 @@ LaTeX Info: Redefining \nameref on input line 29.
 \MACboxA=\box54
 \MACdimenA=\dimen123
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 155.
+(Font)              <7> on input line 162.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 155.
+(Font)              <5> on input line 162.
 
-Overfull \hbox (7.42607pt too wide) detected at line 155
+Overfull \hbox (11.87051pt too wide) detected at line 162
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 155.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 162.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 155.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 162.
 
-Underfull \hbox (badness 7667) in paragraph at lines 155--155
+Underfull \hbox (badness 7667) in paragraph at lines 162--162
 []\OT1/cmr/m/n/10 Functional pro-gram-ming and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
 []\OT1/cmr/m/n/10 Matrix Com-pu-ta-tions* (CS,
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 156.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
 [1
 
 ]
@@ -326,15 +326,15 @@ Overfull \vbox (29.58209pt too high) has occurred while \output is active []
 
 
 [2{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 156.
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 156.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 156.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 156.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 163.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
  ) 
 Here is how much of TeX's memory you used:
  5439 strings out of 493315
  79335 string characters out of 6137904
- 180569 words of memory out of 5000000
+ 181569 words of memory out of 5000000
  8889 multiletter control sequences out of 15000+600000
  5252 words of font info for 19 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -344,7 +344,7 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on AlexanderHahn_Resume.pdf (2 pages, 79379 bytes).
+Output written on AlexanderHahn_Resume.pdf (2 pages, 79529 bytes).
 PDF statistics:
  38 PDF objects out of 1000 (max. 8388607)
  28 compressed objects within 1 object stream
