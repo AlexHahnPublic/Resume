@@ -70,6 +70,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
@@ -114,26 +115,26 @@
                {
                  \\$\bullet$ \textbf{Trading Interface} - worked with our infrastructure engineer to implement our Live Trading Interface.
                  Traded over 12 billion USD via 4 execution brokers over the last 3 years across $\sim$ 4000 unique publically traded US Equities.
-                 The command line tool fetches aws s3 portfolio data on our (hopefully) overnight pre-calculated target positions, computes
+                 The command line tool fetches aws s3 portfolio data on our overnight pre-calculated target positions, computes
                  a suit of portfolio level stats for review then upon manual confirmation submits the orders algorithmically across several execution brokers.
                  I have sole responsibility for a final review of each of Bot Lab's trading baskets and submission to the execution brokers.
-                 \\$\bullet$ \textbf{Simulation and Backtest Evaluation} - worked alongside the head PM to implement a robust backtest (Python, Haskell, various evaluations and visualizations in R).
-                 In short, this would take historical predictions of returns (alpha) as input, as well as portfolio construction parameters, and generate holdings overtime via our portfolio construction algorithm.
-                 Main evaluation metrics were around: returns/performance, risk analysis, predictive power/ translation to return, costs (spreads, commissions, borrow rates), volumes, etc. Git Insights reports that I've
-                 contributed $>$50k lines of code to the platform since inception.
+                 \\$\bullet$ \textbf{Simulation and Backtest Evaluation} - worked alongside the head PM to implement a robust backtest (Python, Haskell, various evaluations and visualizations in R). Based upon input data
+                 we designed an in sample period, out of sample period, and hypothesis testing framework to measure the strategies performance and changes to it, historically.
+                 Main evaluation metrics were around: returns/performance, risk analysis, predictive power/ translation to return, costs (spreads, commissions, borrow rates), volumes, etc.
+                 I've contributed $>$50k lines of code to the platform since inception.
                }
-    \resumeItem{Research/ Strategy improvements: }
+    \resumeItem{Research/ Strategy improvements}
                { \\$\bullet$ \textbf{Alpha} - Design and analysis of predictions across 5 thematic buckets: Market Data, Fundamental, Sentiment, Microstructure, and
                  Cross Asset. I determined what frequencies our alphas were best at predicting and incorporated that info into pc/trading to boost performance.
                  This resulted in a three window daily trading model greatly increasing our monetization rate at the trade off of higher trading volumes.
-                 Similarly, I implemented and automated many studies to identify asymmetries in the predications and portfolios to then reincorporated back into the pipeline.
+                 Similarly, I implemented and automated many studies to identify asymmetries to incorperate back into the pipeline.
                  \\$\bullet$ \textbf{CBOE Options Example} - Performed initial analysis of the CBOE trial data set in R. Upon determining that data set was worth
-                 incorporating into our signals I wrote the file ingestion, parsing, and cleaning code in python, then calculated contract level statistics including, contract greeks,
-                 implied vol, implied price, open interest, volumes etc. From there I wrote the aggregation functions into symbol level statistics (features) that our alpha would use and fit on.
+                 incorporating into our signals I wrote the file ingestion, parsing, and cleaning code in python, then calculated contract level statistics including, greeks,
+                 implied vol, implied price, open interest, volumes, etc. From there I wrote the aggregation functions into symbol level statistics (features) that our alpha would use and fit on.
                  Regressing the Options signal on the master signal (vs other signals) this sub alpha accounts for roughly 20$\%$ of our overall predictive power. This is a
                  decently outsized contribution given there are $\sim$10 signals overall.
                  \\$\bullet$ \textbf{Risk Modeling and Portfolio Construction}: Worked with the head PM to construct and implement the portfolio mathematics
-                 to pass our predictions into specialized conic optimization software. Reduced risk by modeling new market phenomena (designing factors on Elections, Covid, China, Russia/Ukraine, etc.) and passing them
+                 to pass our predictions into a conic optimization program. Reduced risk by modeling new market phenomena (designing factors on Elections, Covid, China, Russia/Ukraine) and passing them
                  into the optimization software as a constraint to bound exposure to. Additionally, I ran many portfolio simulations to analyse and fine tune our portfolio construction process,
                  especially in cases where anything upstream (alpha, data, etc) changed.
                }
@@ -147,12 +148,12 @@
     \resumeItem{Macro Economic Model Updates}
                {Systemized Volume, Open Interest, and Greek Estimates of Brazilian options/futures contracts into Bridgewater's Data and Backtesting platform.
                  Previously the system was a mixture of Excel and manual bloomberg data entry.
-                 I overhauled of the system to improve and port the logic into Bridgewater's Scala based production platform.}
+                 I overhauled the system to improve and port the logic into Bridgewater's Scala based production platform.}
 %    \resumeItem{Investment Engineering Course}
 %               {All Investment engineers are given a course which overviewed Asset classes, Macro Economics, Portfolio Theory,
 %                 and Bridgewater's framework for evaluating non consenus prices/returns.}
      \resumeItem{Production Integration Engineer - Team Lead}
-                {Lead a team of six Engineers to assist
+                {Led a team of six Engineers to assist
                   the Research Department in utilizing Bridgewater's main Backtesting/Signal
                   Generation Platform (Lightspeed), and diagnostic tools (Fusion - advanced UI
                   charting tool). Supported Production Modules and operations team in running
