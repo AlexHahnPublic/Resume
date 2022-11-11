@@ -1,0 +1,183 @@
+%------------------------
+% Resume Template
+% Author : Alexander Hahn
+% Github : https://github.com/AlexHahnPublic (not really lol)
+
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Alexander Hahn}} & Email: \href{mailto:}{afh53@cornell.edu}\\
+  \href{https://github.com/AlexHahnPublic}{Github: ~~github.com/AlexHahnPublic} & Mobile:~~~(845) 248-2761 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Cornell University}{Ithaca, New York}
+      {Bachelors - Mathematical Physics}{September 2010 - May 2014}
+      %{\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Machine Learning, Networking, Databases}}}
+    \resumeSubHeadingListEnd
+
+\vspace{-5pt}
+\section{Skills Summary}
+        \resumeSubHeadingListStart
+        \resumeSubItem{Languages}{~~~~~~R, Haskell, Python, Bash/Unix Commandline tools/ scripting, Ocaml, Scala, SQL/kdb}
+        \resumeSubItem{Technical}{~~~~~~~~Emacs, Linux, Git/Travis, Tmux, AWS (S3, EC2, Batch, CloudWatch), MOSEK, Docker, Vim, nix, IntelliJ}
+        \resumeSubItem{Quantitative}{~~~Statistical Modeling, Quantitative Trading (Execution), Portfolio Construction/Analysis (constrained optimization), Data Processing, Forecasting, Scientific Computing with Linear \& Non-linear Numerical Methods}
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Experience}
+\vspace{2pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Bot Lab LP (Schonfeld external manager)}{New York, NY}
+    {Associate Quantitative Portfolio Manager/ Quant Trader}{April 2019 - Present}
+    \resumeItemListStart
+    \resumeItem{Initial Platform Build $\sim$ 2019 to 2020 from IMA to live trading}
+               {
+                 \\$\bullet$ Developed and deployed the initial strategy: Alongside the head PM, a former Citadel Stat Arb Quant,
+                 I helped design and implement our core stable of alphas, portfolio construction (MOSEK), backtest/simulation,
+                 execution algos, as well as all of the infrastructure needed to support the live strategy
+                 and research environment.
+                 \\$\bullet$ Initial allocation of 100MM to deploy a US Equities, L/S market and factor neutral,
+                 mid frequency ($\sim$1 day holding period), stat arb portfolio. Additional ability to scale/ grow the book
+                 upon hitting performance metrics.
+                 \\$\bullet$ Integration of Bot Lab's platform with external partners: Schonfeld's file based OMS,
+                 Prime brokers (securities financing, locates, holdings), Execution Brokers, Back Office, and Data Vendors.
+                 \\$\bullet$ Contributed $>$50K lines of Haskell/python across 200 (squashed/independent/PRs) commits to master across all
+                 parts of strategy pipeline according to the GitHub insights page on our main platform repo. Contributed $>$34K lines of R
+                 to our Research environment (various studies and analysis).
+               }
+    \resumeItem{Alpha Contribution - 2019 to Present}
+               {\\$\bullet$ Worked with our head quant to add 3 sub-alphas bringing our stable of core signals to $\sim$12
+                 alphas fit with a hierarchical regression procedure to form a master signal.
+                 \\$\bullet$ Analysis, maintenance, updating of alpha's across 5 thematic buckets: Fundamental, Sentiment,
+                 Microstructure, Market Data (TAQ), and Cross Asset. Measured wrt the raw return residualized to barra's USE4S/USFAST factor model plus some custom factors.
+                 \\$\bullet$ Master signal had a 3\% IC (daily) in-sample, 2\% out-of-sample, and 2.5\%
+                 Live trading IC. Roughly 100 features per signal fit with  MOSEK's highly
+                 regularized linear fitters (Elastic Net).}
+    \resumeItem{Portfolio Construction - 2019 to Present}
+               {\\$\bullet$ Initial evaluation and encoding of constraints into MOSEK's interior point solution to
+                 maximize risk adjusted multiperiod returns.
+                 \\$\bullet$ Live PC runs a tighter 9:1 allocation of idio to factor exante risk with slight but non impactful decay expost.
+                 \\$\bullet$ Evaluation and feedback into PC of: monetization rate, alpha allocation/ holdings exposure to alpha,
+                 awareness/ improvements of TCA (cost) models after quarterly
+                 reviews with execution brokers (fraction of spread paid, temporary/permanent impact, etc).}
+    \resumeItem{Trading and Execution - 2020 to present}
+               {\\$\bullet$ Traded over 12 Billion USD via 4 execution brokers over the last 3 years. Determined allocation between brokers/algos.
+                 \\$\bullet$ Helped develop our "one touch" automated trading CLI and have final responsibility
+                 on reviewing and approving each basket before we send to execution brokers.
+                 \\$\bullet$ Reduced spread costs via open and close auction participation, identifying asymmytries in GICS
+                 groupings/quantile groupings across various dimensions and either updating our trading algos (static schedule) or feeding back into PC.}
+    \resumeItemListEnd
+    \vspace{2pt}
+    \resumeSubheading
+        {Bridgewater Associates}{Glendinning/Westport, CT}
+        {Investment Engineer \& Production Integration Engineer}{Dec 2016 -  March 2019}
+    \resumeItemListStart
+    \resumeItem{Macro Economic Model Updates}
+               {Systemized Volume, Open Interest, and Greek Estimates of Brazilian options/futures contracts into Bridgewater's Data and Backtesting platform.
+                 Previously the system was a mixture of Excel and manual bloomberg data entry.
+                 I overhauled of the system to improve and port the logic into Bridgewater's Scala based production platform.}
+%    \resumeItem{Investment Engineering Course}
+%               {All Investment engineers are given a course which overviewed Asset classes, Macro Economics, Portfolio Theory,
+%                 and Bridgewater's framework for evaluating non consenus prices/returns.}
+     \resumeItem{Production Integration Engineer - Team Lead}
+                {Lead a team of six Engineers to assist
+                  the Research Department in utilizing Bridgewater's main Backtesting/Signal
+                  Generation Platform (Lightspeed), and diagnostic tools (Fusion - advanced UI
+                  charting tool). Supported Production Modules and operations team in running
+                  live/ production issues. Supported Researchers' various use cases and implementations of logic into the platform.
+                  Added functionality to the Investement Engineer/Associate userfacing API as needed.}
+    \resumeItemListEnd
+    \vspace{2pt}
+    \resumeSubheading
+        {Nomura}{New York, NY}
+        {Technology Analyst}{August 2014 -  November 2016}
+        \resumeItemListStart
+        \resumeItem{Automation and Support of Structured Products}
+                   {Worked on a team to systemize Nomura's Equity Linked Bond business enabling the growth of the book.
+                     Helped implement the STP (straight through processing) of notes from
+                     issuance to expiration (or redemption). This included pricing/valuation, periodic coupon/ payment analysis, risk analysis / hedging (index and dynamic).
+                     Worked alongside a trader and desk quant to help support the growth of the  portfolio to 24 large notional Notes with tenors varying from 1-10 years.}
+        \resumeItem{Security Master}{Supported Nomura's Reference database. Rationalized and help maintain consistency between numerous security identifiers. }
+        \resumeItemListEnd
+
+        \resumeSubHeadingListEnd
+
+\end{document}
