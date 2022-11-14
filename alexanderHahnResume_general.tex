@@ -97,7 +97,7 @@
 \vspace{-5pt}
 \section{Skills Summary}
         \resumeSubHeadingListStart
-        \resumeSubItem{Languages}{~~~~~~R, Haskell, Python, Bash/Unix Commandline tools/ scripting, Ocaml, Scala, SQL/kdb}
+        \resumeSubItem{Languages}{~~~~~~R, Haskell, Python, Bash/Unix Commandline tools \& scripting, SQL/kdb, Scala, OCaml}
         \resumeSubItem{Technical}{~~~~~~~~Emacs, Linux, Git/Travis, Tmux, AWS (S3, EC2, Batch, CloudWatch), MOSEK, Docker, Vim, nix, IntelliJ}
         \resumeSubItem{Quantitative}{~~~Statistical Modeling, Quantitative Trading (Execution), Portfolio Construction/Analysis (constrained optimization), Data Processing, Forecasting, Scientific Computing with Linear \& Non-linear Numerical Methods}
 
@@ -113,13 +113,16 @@
       Order of 100MM's initial allocation.}
     \resumeItem{Platform contributions}
                {
-                 \\$\bullet$ \textbf{Trading Interface} - worked with our infrastructure engineer to implement our Live Trading Interface.
+                 \\$\bullet$ \textbf{Trading Interface} - worked with our infrastructure engineer to implement our live trading interface.
                  Traded over 12 billion USD via 4 execution brokers over the last 3 years across $\sim$ 4000 unique publically traded US Equities.
-                 The command line tool fetches aws s3 portfolio data on our overnight pre-calculated target positions, computes
-                 a suit of portfolio level stats for review then upon manual confirmation submits the orders algorithmically across several execution brokers.
-                 I have sole responsibility for a final review of each of Bot Lab's trading baskets and submission to the execution brokers.
-                 \\$\bullet$ \textbf{Simulation and Backtest Evaluation} - worked alongside the head PM to implement a robust backtest (Python, Haskell, various evaluations and visualizations in R). Based upon input data
-                 we designed an in sample period, out of sample period, and hypothesis testing framework to measure the strategies performance and changes to it, historically.
+                 As the firm's quant trader I developed models to anlayze and determine: allocation amongst brokers, allocation amongst trading algos,
+                 static schedule logic (trade windows, algo instructions, auction participations), etc.
+                 Had final sign off responsibility to review and submit each of Bot Lab's trading baskets to the market.
+                 Additionally, reviewed execution performance with brokers (and Schonfeld) quarterly and incorporated findings into internal work/ trading decisions.
+                 \\$\bullet$ \textbf{Simulation and Backtest Evaluation} - worked alongside the head PM to build a robust backtest. Specifically wrote Python, Haskell, and R
+                 to analyze alpha performance over time, portfolio construction performance over time, and overall returns/ fund performance in a simulated fashion. We followed
+                 a strict quantitative approach leveraging an in-sample period (2010-2015), out-of-sample period (2015-2020/Live), and hypothesis testing framework to measure the strategies
+                 performance and statistically significant changes to it.
                  Main evaluation metrics were around: returns/performance, risk analysis, predictive power/ translation to return, costs (spreads, commissions, borrow rates), volumes, etc.
                  I've contributed $>$50k lines of code to the platform since inception.
                }
