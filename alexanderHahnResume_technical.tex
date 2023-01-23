@@ -109,14 +109,14 @@
 \section{Experience}
 \vspace{2pt}
   \resumeSubHeadingListStart
-    \resumeSubheading{Bot Lab LP (Schonfeld external manager)}{New York, NY}
+    \resumeSubheading{Bot Lab LP (Schonfeld external manager, 3 person team)}{New York, NY}
     {Associate Quantitative Portfolio Manager/ Quant Trader}{April 2019 - Present}
     \resumeItemListStart
     \resumeItem{Initial Platform Build $\sim$ 2019 to 2020 from IMA to live trading}
                {
-                 \\$\bullet$ Developed and deployed the initial strategy: Alongside the head PM, a former Citadel Stat Arb Quant,
-                 I helped design and implement our core stable of alphas, portfolio construction (MOSEK), backtest/simulation,
-                 execution algos, as well as all of the infrastructure needed to support the live strategy
+                 \\$\bullet$ Assisisted in developing and deploying the initial strategy: Alongside the head PM, a former Citadel Stat Arb Quant,
+                 I helped analyse and improve our core stable of alphas, portfolio construction (MOSEK), backtest/simulation,
+                 execution algos, and was involved with setting up our infrastructure needs to support the live strategy
                  and research environment.
                  \\$\bullet$ Initial allocation of 100MM to deploy a US Equities, L/S market and factor neutral,
                  mid frequency ($\sim$1 day holding period), stat arb portfolio. Additional ability to scale/ grow the book
@@ -128,15 +128,15 @@
                  to our Research environment (various studies and analysis).
                }
     \resumeItem{Alpha Contribution - 2019 to Present}
-               {\\$\bullet$ Worked with our head quant to add 3 sub-alphas bringing our stable of core signals to $\sim$12
-                 alphas fit with a hierarchical regression procedure to form a master signal.
-                 \\$\bullet$ Analysis, maintenance, updating of alpha's across 5 thematic buckets: Fundamental, Sentiment,
+               {\\$\bullet$ Worked with our head quant pm to build characteristic portfolios for the individual $\sim$12 alphas, then fit with a hierarchical regression procedure to form a master signal.
+                 After studying and improving the purely linear characteristic portfolios, I helped implement and tune realistic constrained portfolios at the sub signal and master signal level.
+                 \\$\bullet$ Alpha's spanned across 5 thematic buckets: Fundamental, Sentiment,
                  Microstructure, Market Data (TAQ), and Cross Asset. Measured wrt the raw return residualized to barra's USE4S/USFAST factor model plus some custom factors.
                  \\$\bullet$ Master signal had a 3\% IC (daily) in-sample, 2\% out-of-sample, and 2.5\%
                  Live trading IC. Roughly 100 features per signal fit with  MOSEK's highly
                  regularized linear fitters (Elastic Net).}
     \resumeItem{Portfolio Construction - 2019 to Present}
-               {\\$\bullet$ Initial evaluation and encoding of constraints into MOSEK's interior point solution to
+               {\\$\bullet$ Initial evaluation and encoding of constraints (Bot Lab's + Schonfeld limits) into MOSEK's interior point solution to
                  maximize risk adjusted multiperiod returns.
                  \\$\bullet$ Live PC runs a tighter 9:1 allocation of idio to factor exante risk with slight but non impactful decay expost.
                  \\$\bullet$ Evaluation and feedback into PC of: monetization rate, alpha allocation/ holdings exposure to alpha,

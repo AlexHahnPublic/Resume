@@ -106,41 +106,40 @@
 \section{Experience}
 \vspace{2pt}
   \resumeSubHeadingListStart
-    \resumeSubheading{Bot Lab LP (Schonfeld external hedge fund)}{New York, NY}
-    {Associate Quantitative Portfolio Manager/ Quant Trader}{April 2019 - Present}
+    \resumeSubheading{Bot Lab LP (Schonfeld external fund)}{New York, NY}
+    {Quantitative Trader}{April 2019 - Present}
     \resumeItemListStart
-    \resumeItem{Overview} {Joined a Citadel quant portfolio manager and Stanford CS PhD to build a quantitive hedge fund exclusive to Schonfeld Strategic Advisors.
-      Order of 100MM's initial allocation.}
-    \resumeItem{Platform contributions}
-               {
-                 \\$\bullet$ \textbf{Trading Interface} - worked with our infrastructure engineer to implement our live trading interface.
-                 Traded over 12 billion USD via 4 execution brokers over the last 3 years across $\sim$ 4000 unique publically traded US Equities.
-                 As the firm's quant trader I developed models to anlayze and determine: allocation amongst brokers, allocation amongst trading algos,
+    \resumeItem{Overview} {Built a $\sim$ daily frequency US Equities statistical arbitrage strategy alongside a Citadel quant portfolio manager (main pm) and Stanford CS PhD (Infra Engineer) exclusive to
+      Schonfeld Strategic Advisors. Managed three additional employees with a 100MM's initial allocation.}
+    \resumeItem{Research/ Strategy}
+               { \\$\bullet$ \textbf{Alpha} - Design and analysis of forecasts across 5 thematic buckets: Market Data, Fundamental, Sentiment, Microstructure, and
+                 Cross Asset. Lead the development of three of our eight main signals. Helped maintain, update, and retrain the full suite of
+                 sub-signals as well as their formulation into a master signal as needed. In sample correlation with the one day forward return of 3\%, out of sample,
+                 2\%, and in Live 2.5\%.
+
+                 High level areas of research: Changes to the response (forward return residualized to usfast, changing frequencies/ multiperiod models), applications of statistical learning techniques to
+                 individual alphas as well as alpha combination, evaluating potential new alpha datasets.
+                 \\$\bullet$ \textbf{Portfolio Construction} - Encoded linear constraints (bounded industry/style factor exposure, locates, trading limits, position limits, gmv utilization, etc), quadratic
+                 constraints (risk, plus many experiments requiring semidefinite programming), and the objective in MOSEK. Started with a minimal working optimizer and added in complexity/ awareness with time (and
+                 substantial backtesting!). For example went from a simple but sufficient quarter spread cost
+                 assumption to a tuned, stock dependant, cost with impact estimate model. Trained additional factors to add into risk model, tested through back test, and deployed as needed/ requested by
+                 investors. Eg, stay at home vs covid recovery factor, election factors, China exposures related factors, Ukraine/ Russia factors. Assisted in implementing and running our backtesting framework.
+                 Achieved a consistent 90-95\% idio risk portfolio (to USFAST).
+                 %% \\$\bullet$ \textbf{CBOE Options Example} - Performed initial analysis of the CBOE trial data set in R. Upon determining that data set was worth
+                 %% incorporating into our signals I wrote the file ingestion, parsing, and cleaning code in python, then calculated contract level statistics including, greeks,
+                 %% implied vol, implied price, open interest, volumes, etc. From there I wrote the aggregation functions into symbol level statistics (features) that our alpha would use and fit on.
+                 %% Regressing the Options signal on the master signal (vs other signals) this sub alpha accounts for roughly 20$\%$ of our overall predictive power. This is a
+                 %% decently outsized contribution given there are $\sim$10 signals overall.
+                 \\$\bullet$ \textbf{Trading} -\\
+                 Operational: worked with our infrastructure engineer to implement our live trading interface.
+                 Traded over 12 billion USD via 4 execution brokers over the last 3 years across $\sim$ 4000 unique publically traded US Equities. As the firm's
+                 quant trader I had final sign off responsibility to review and submit all trading baskets Bot Lab was sending to the execution brokers via Schonfeld's OMS (JSON interface to fix).
+
+                 Research: I developed models to anlayze and determine: allocation amongst brokers, allocation amongst trading algos,
                  static schedule logic (trade windows, algo instructions, auction participations), etc.
-                 Had final sign off responsibility to review and submit each of Bot Lab's trading baskets to the market.
-                 Additionally, reviewed execution performance with brokers (and Schonfeld) quarterly and incorporated findings into internal work/ trading decisions.
-                 \\$\bullet$ \textbf{Simulation and Backtest Evaluation} - worked alongside the head PM to build a robust backtest. Specifically wrote Python, Haskell, and R
-                 to analyze alpha performance over time, portfolio construction performance over time, and overall returns/ fund performance in a simulated fashion. We followed
-                 a strict quantitative approach leveraging an in-sample period (2010-2015), out-of-sample period (2015-2020/Live), and hypothesis testing framework to measure the strategies
-                 performance and statistically significant changes to it.
-                 Main evaluation metrics were around: returns/performance, risk analysis, predictive power/ translation to return, costs (spreads, commissions, borrow rates), volumes, etc.
-                 I've contributed $>$50k lines of code to the platform since inception.
+                 Additionaly reviewed execution performance with brokers (and Schonfeld) quarterly and incorporated findings into internal work/ trading decisions.
                }
-    \resumeItem{Research/ Strategy improvements}
-               { \\$\bullet$ \textbf{Alpha} - Design and analysis of predictions across 5 thematic buckets: Market Data, Fundamental, Sentiment, Microstructure, and
-                 Cross Asset. I determined what frequencies our alphas were best at predicting and incorporated that info into pc/trading to boost performance.
-                 This resulted in a three window daily trading model greatly increasing our monetization rate at the trade off of higher trading volumes.
-                 Similarly, I implemented and automated many studies to identify asymmetries to incorperate back into the pipeline.
-                 \\$\bullet$ \textbf{CBOE Options Example} - Performed initial analysis of the CBOE trial data set in R. Upon determining that data set was worth
-                 incorporating into our signals I wrote the file ingestion, parsing, and cleaning code in python, then calculated contract level statistics including, greeks,
-                 implied vol, implied price, open interest, volumes, etc. From there I wrote the aggregation functions into symbol level statistics (features) that our alpha would use and fit on.
-                 Regressing the Options signal on the master signal (vs other signals) this sub alpha accounts for roughly 20$\%$ of our overall predictive power. This is a
-                 decently outsized contribution given there are $\sim$10 signals overall.
-                 \\$\bullet$ \textbf{Risk Modeling and Portfolio Construction}: Worked with the head PM to construct and implement the portfolio mathematics
-                 to pass our predictions into a conic optimization program. Reduced risk by modeling new market phenomena (designing factors on Elections, Covid, China, Russia/Ukraine) and passing them
-                 into the optimization software as a constraint to bound exposure to. Additionally, I ran many portfolio simulations to analyse and fine tune our portfolio construction process,
-                 especially in cases where anything upstream (alpha, data, etc) changed.
-               }
+
 
     \resumeItemListEnd
     \vspace{2pt}
